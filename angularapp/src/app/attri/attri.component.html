@@ -1,0 +1,33 @@
+<div [ngStyle]="{'color':colorVal, 'background-color':'#ddd'}"> 
+
+</div>
+    learning angular 8
+    <h4>Ng Class</h4>
+
+    <ul *ngFor="let person of people">
+        <li [ngClass]="{
+            'text-success': person.country === 'UK',
+            'text-primary': person.country === 'USA',
+            'text-danger': person.country === 'HK'
+        }">
+     
+         {{person.name}} ({{person.country}})
+        </li>
+    </ul>
+
+    <p>Normal para</p> 
+    <p appCustdir>Custom para</p>
+    <div appCustdir>Custom para</div>
+    <div style="margin-left:300px;">
+    <input type="text" name=""  id="" #uusername>
+    <div> 
+        <button (clik)="show(uusername.value)">show</button>
+    </div>
+    <div> 
+        {{uname}}
+    </div>
+    
+    
+    
+    
+    

@@ -1,0 +1,9 @@
+<h1> Data Binding Assignment</h1>
+<div> 
+    Username:<input type="text" [(ngModel)]="userName">
+</div>
+<br>
+<div> Username is:{{userName}}</div>
+<br>
+<button [disabled]="allowNewServer" (click)="onClickReset()"> Reset</button>
+

@@ -1,0 +1,31 @@
+
+
+<h2> ngSwitch assignment</h2>
+<div> 
+    <div> 
+        <title>
+            {{title}}
+        </title>
+    </div>
+</div>
+<div> 
+    <table class="table"> 
+        <thead> 
+            <tr>
+                <th>Name</th>
+                <th>Degree</th>
+                <th>Univercity</th>
+                <td>Year</td>
+
+            </tr>
+        </thead>
+        <tbody> 
+            <tr *ngFor="let student of students" > 
+                <td>{{student.name}}</td>
+                <td>{{student.degree}}</td>
+                <td>{{student.univercity}}</td>
+                <td>{{student.year}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
